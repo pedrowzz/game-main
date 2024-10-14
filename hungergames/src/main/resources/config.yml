@@ -1,0 +1,9 @@
+# Types: SINGLEKIT | DOUBLEKIT
+# Modes: HGMIX, Event, Scrim
+
+game:
+  mode: DEFAULT
+  type: SINGLEKIT
+  identifier: 1
+world:
+  storage_directory: /home/ubuntu/hunger-games/maps

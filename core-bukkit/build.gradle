@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id "com.github.johnrengelman.shadow" version "6.1.0"
+}
+
+group 'com.minecraft.core.bukkit'
+version '1.0.0-SNAPSHOT'
+
+compileJava.options.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+    maven { url "https://hub.spigotmc.org/nexus/content/groups/public/" }
+}
+
+dependencies {
+    compile project(':core')
+
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+
+    compile group: 'redis.clients', name: 'jedis', version: '2.9.0' // Redis
+
+    compileOnly files("C:\\Libraries\\bukkit-server.jar")
+    compileOnly files("C:\\Libraries\\ViaVersion.jar")
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+jar {
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+
+shadowJar {
+    dependencies {
+        include(project(':core'))
+    }
+    archiveClassifier = null
+}

@@ -1,0 +1,5 @@
+rootProject.name = 'Game'
+include 'core', 'core-bukkit', 'core-proxy', 'hungergames', 'lobby', 'pvp', 'duels', 'auth', 'terrain-generator', 'limbo-afk', 'hub', 'thebridge', 'bedwars', 'skywars'
+include 'arcade-duels'
+include 'arcade-pvp'
+

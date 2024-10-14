@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+    id "com.github.johnrengelman.shadow" version "6.1.0"
+    id 'net.minecrell.plugin-yml.bukkit' version '0.3.0'
+}
+
+group 'com.minecraft.generator'
+version '1.0.0-SNAPSHOT'
+
+compileJava.options.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+    maven { url "https://hub.spigotmc.org/nexus/content/groups/public/" }
+}
+
+dependencies {
+
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+
+    String dir = "C:\\Libraries\\"
+
+    compileOnly files(dir + "bukkit-server.jar")
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+jar {
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+
+bukkit {
+    name = 'Generator'
+    main = 'com.minecraft.generator.Generator'
+    version = '1.0.0-' + gitVersion()
+    website = 'www.yolomc.com'
+    author = 'fress'
+    depend = ['TerrainControl']
+    load = 'STARTUP'
+    description = 'Terrain Generator bukkit plugin based on Open Terrain Generator'
+}
+
+static String gitVersion() {
+    return 'git rev-parse --verify --short HEAD'.execute().getText().trim()
+}

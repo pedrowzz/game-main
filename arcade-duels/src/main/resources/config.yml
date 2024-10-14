@@ -1,0 +1,33 @@
+modes:
+  Bridge:
+    min_rooms: 35
+    max_rooms: 50
+    directory: thebridge
+  Gladiator:
+    min_rooms: 35
+    max_rooms: 50
+    directory: gladiator
+  Simulator:
+    min_rooms: 15
+    max_rooms: 35
+    directory: simulator
+  UHC:
+    min_rooms: 12
+    max_rooms: 24
+    directory: arena
+  Boxing:
+    min_rooms: 12
+    max_rooms: 24
+    directory: arena
+  Sumo:
+    min_rooms: 10
+    max_rooms: 15
+    directory: sumo
+  Soup:
+    min_rooms: 10
+    max_rooms: 25
+    directory: soup
+  Scrim:
+    min_rooms: 10
+    max_rooms: 25
+    directory: scrim
