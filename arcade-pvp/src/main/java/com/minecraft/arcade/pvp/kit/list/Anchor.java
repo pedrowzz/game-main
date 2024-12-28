@@ -4,6 +4,7 @@ import com.minecraft.arcade.pvp.kit.Kit;
 import com.minecraft.arcade.pvp.kit.object.KitCategory;
 import com.minecraft.arcade.pvp.user.User;
 import com.minecraft.core.bukkit.util.worldedit.Pattern;
+import com.minecraft.arcade.pvp.util.EventUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -30,7 +31,7 @@ public class Anchor extends Kit {
 
     @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
     public void onAnchor(EntityDamageByEntityEvent event) {
-        if (event.isBothPlayers()) {
+        if (EventUtils.isBothPlayers(event)) {
 
             Player player = (Player) event.getEntity();
             Player damager = (Player) event.getDamager();

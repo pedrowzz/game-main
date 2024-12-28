@@ -14,6 +14,7 @@ import com.minecraft.core.bukkit.util.scoreboard.GameScoreboard;
 import com.minecraft.core.database.data.DataStorage;
 import com.minecraft.core.database.enums.Columns;
 import com.minecraft.core.database.enums.Tables;
+import com.minecraft.arcade.pvp.util.EventUtils;
 import lombok.Getter;
 import org.bukkit.*;
 import org.bukkit.entity.Player;
@@ -252,7 +253,7 @@ public class Arena extends Game implements MovementHandler {
 
     @EventHandler
     public void onEntityDamageByEntityEvent(EntityDamageByEntityEvent event) {
-        if (this.protectedUuidSet.contains(event.getEntity().getUniqueId()) && event.isBothPlayers())
+        if (this.protectedUuidSet.contains(event.getEntity().getUniqueId()) && EventUtils.isBothPlayers(event))
             event.setCancelled(true);
     }
 

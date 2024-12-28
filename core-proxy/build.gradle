@@ -37,7 +37,7 @@ dependencies {
     compile group: 'redis.clients', name: 'jedis', version: '2.9.0'
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.0'
 
-    compileOnly files("C:\\Libraries\\proxy-server.jar")
+    compileOnly files("/workspaces/game-main/proxy-server.jar")
 
     testCompile group: 'org.apache.commons', name: 'commons-lang3', version: '3.0'
     testCompile group: 'junit', name: 'junit', version: '4.12'

@@ -8,6 +8,7 @@ package com.minecraft.arcade.pvp.listeners;
 
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Sets;
+import com.minecraft.arcade.pvp.util.EventUtils;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -22,7 +23,7 @@ public class DamageListener implements Listener {
 
     @EventHandler(priority = EventPriority.LOW, ignoreCancelled = true)
     public void onEntityDamageByEntityEvent(EntityDamageByEntityEvent event) {
-        if (event.isBothPlayers()) {
+        if (EventUtils.isBothPlayers(event)) {
             Player player = (Player) event.getDamager();
             ItemStack itemStack = player.getItemInHand();
             if (itemStack != null && ACCEPTABLE_MATERIALS.contains(itemStack.getType()))

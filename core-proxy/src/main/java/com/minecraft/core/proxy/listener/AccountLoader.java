@@ -33,7 +33,7 @@ import com.minecraft.core.util.DateUtils;
 import com.minecraft.core.util.geodata.AddressData;
 import com.minecraft.core.util.geodata.DataResolver;
 import com.minecraft.core.util.skin.Skin;
-import com.yolo.dev.Firewall;
+import com.minecraft.core.proxy.util.Firewall;
 import net.md_5.bungee.BungeeCord;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.chat.TextComponent;

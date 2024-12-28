@@ -22,8 +22,9 @@ dependencies {
 
     compileOnly group: 'redis.clients', name: 'jedis', version: '3.1.0'
 
-    compileOnly files("C:\\Libraries\\bukkit-server.jar")
-    compileOnly files("C:\\Libraries\\ViaVersion.jar")
+    compileOnly files("/workspaces/game-main/bukkit-server.jar")
+    compileOnly files("/workspaces/game-main/ViaVersion.jar")
+    compileOnly files("/workspaces/game-main/imanity.jar")
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 

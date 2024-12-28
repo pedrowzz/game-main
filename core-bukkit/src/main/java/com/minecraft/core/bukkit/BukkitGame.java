@@ -70,6 +70,7 @@ public class BukkitGame extends JavaPlugin {
     private BossbarProvider bossbarProvider;
     private KnockbackService knockbackService;
     private InventoryService inventoryService;
+    private boolean visible;
 
     @Override
     public void onLoad() {
@@ -207,6 +208,14 @@ public class BukkitGame extends JavaPlugin {
         }
         if (file.exists())
             file.delete();
+    }
+
+    public void setVisible(boolean visible) {
+        this.visible = visible;
+    }
+
+    public boolean isVisible() {
+        return visible;
     }
 
 }

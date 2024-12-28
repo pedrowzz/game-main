@@ -22,6 +22,9 @@ import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import net.minecraft.server.v1_8_R3.IChatBaseComponent;
+import net.minecraft.server.v1_8_R3.PacketPlayOutChat;
+import org.bukkit.craftbukkit.v1_8_R3.entity.CraftPlayer;
 
 import java.text.DecimalFormat;
 import java.util.*;
@@ -182,6 +185,12 @@ public class CooldownProvider implements Listener {
         return null;
     }
 
+    private void sendActionBar(Player player, String message) {
+        IChatBaseComponent icbc = IChatBaseComponent.ChatSerializer.a("{\"text\": \"" + message + "\"}");
+        PacketPlayOutChat ppoc = new PacketPlayOutChat(icbc, (byte) 2);
+        ((CraftPlayer)player).getHandle().playerConnection.sendPacket(ppoc);
+    }
+
     public class CooldownListener extends DynamicListener {
 
         @EventHandler
@@ -233,7 +242,7 @@ public class CooldownProvider implements Listener {
             if (found != null) {
                 display(player, found);
             } else if (list.isEmpty()) {
-                player.sendActionBar(" ");
+                sendActionBar(player, " ");
             }
             sortedList.clear();
         }
@@ -258,7 +267,7 @@ public class CooldownProvider implements Listener {
 
             String seconds = Account.fetch(player.getUniqueId()).getLanguage() == Language.PORTUGUESE ? "segundos" : "seconds";
 
-            player.sendActionBar("§f" + cooldown.getDisplayName() + " " + bar + " §f" + decimalFormat.format(cooldown.getRemaining()) + " " + seconds);
+            sendActionBar(player, "§f" + cooldown.getDisplayName() + " " + bar + " §f" + decimalFormat.format(cooldown.getRemaining()) + " " + seconds);
         }
     }
 }
