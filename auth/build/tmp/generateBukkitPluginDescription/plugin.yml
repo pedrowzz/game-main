@@ -1,0 +1,5 @@
+name: Auth
+version: 1.0.0-885f2af
+main: com.minecraft.auth.Auth
+description: Auth bukkit plugin based on core, core-bukkit and third based on core-proxy.
+website: www.yolomc.com

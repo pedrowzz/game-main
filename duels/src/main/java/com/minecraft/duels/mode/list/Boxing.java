@@ -54,9 +54,15 @@ public class Boxing extends Mode {
         });
     }
 
+    // Adicione o método isBothPlayers() 
+    public boolean isBothPlayers(EntityDamageByEntityEvent event) {
+        // Implemente a lógica que verifica se ambos os jogadores estão envolvidos
+        return (event.getEntity() instanceof Player) && (event.getDamager() instanceof Player);
+    }
+
     @EventHandler
     public void onBoxingDamage(EntityDamageByEntityEvent event) {
-        if (!event.isBothPlayers())
+        if (!isBothPlayers(event)) 
             return;
 
         final Player entity = (Player) event.getEntity(), damager = (Player) event.getDamager();
@@ -130,5 +136,4 @@ public class Boxing extends Mode {
 
         gameScoreboard.updateLines(scores);
     }
-
 }

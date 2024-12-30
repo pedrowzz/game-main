@@ -110,9 +110,15 @@ public class PlayerListener implements Listener {
         }
     }
 
+    // Adicione o método isBothPlayers() 
+    public boolean isBothPlayers(EntityDamageByEntityEvent event) {
+        // Implemente a lógica que verifica se ambos os jogadores estão envolvidos
+        return (event.getEntity() instanceof Player) && (event.getDamager() instanceof Player);
+    }
+
     @EventHandler(priority = EventPriority.LOWEST)
     public void onEntityDamageByEntity(EntityDamageByEntityEvent event) {
-        if (event.isBothPlayers()) {
+        if (isBothPlayers(event)) {
             Player player = (Player) event.getEntity();
             User user = User.fetch(player.getUniqueId());
 
@@ -122,7 +128,6 @@ public class PlayerListener implements Listener {
                 event.setCancelled(true);
         }
     }
-
 
     @EventHandler(priority = EventPriority.LOWEST)
     public void onEntityDamage(PlayerDropItemEvent event) {

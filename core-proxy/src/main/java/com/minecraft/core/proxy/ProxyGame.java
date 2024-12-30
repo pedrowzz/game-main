@@ -53,16 +53,16 @@ import java.util.concurrent.TimeUnit;
 public class ProxyGame extends Plugin {
 
     private static ProxyGame instance;
-    private final ProxyFrame proxyFrame;
-    private final TranslationExecutor translationExecutor;
-    private final RedisPubSub redisPubSub;
-    private final Configuration configuration;
-    private final Discord discord;
-    private final PluginUpdater pluginUpdater;
-    private final ServerListPacket serverListPacket;
-    private final CountWatchScheduler countWatchScheduler;
-    private final GiftCodeStorage giftCodeStorage;
-    private final long startTime;
+    private ProxyFrame proxyFrame;
+    private TranslationExecutor translationExecutor;
+    private RedisPubSub redisPubSub;
+    private Configuration configuration;
+    private Discord discord;
+    private PluginUpdater pluginUpdater;
+    private ServerListPacket serverListPacket;
+    private CountWatchScheduler countWatchScheduler;
+    private GiftCodeStorage giftCodeStorage;
+    private long startTime;
 
     private final Queue<LogData> logQueue = new ConcurrentLinkedQueue<>();
 

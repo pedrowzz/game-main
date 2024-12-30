@@ -1,0 +1,5 @@
+name: Arcade
+version: 1.0.0-885f2af
+main: com.minecraft.arcade.pvp.PvP
+description: Arcade bukkit plugin based on core and core-bukkit.
+website: www.yolomc.com

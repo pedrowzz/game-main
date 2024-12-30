@@ -15,7 +15,6 @@ public class DamageListener implements Listener {
     private final ImmutableSet<Material> ACCEPTABLE_MATERIALS = Sets.immutableEnumSet(Material.WOOD_SWORD, Material.STONE_SWORD, Material.IRON_SWORD, Material.GOLD_SWORD, Material.DIAMOND_SWORD, Material.WOOD_AXE, Material.STONE_AXE, Material.IRON_AXE, Material.DIAMOND_AXE, Material.WOOD_PICKAXE, Material.STONE_PICKAXE, Material.IRON_PICKAXE, Material.GOLD_PICKAXE, Material.DIAMOND_PICKAXE, Material.WOOD_SPADE, Material.STONE_SPADE, Material.IRON_SPADE, Material.GOLD_SPADE, Material.DIAMOND_SPADE);
 
     /*
-
       Wooden Sword:
        Normal: 2.5 (5) -> 1.5 (3) [-2]
        Critical: 3 (6) -> 2 (4) [-2]
@@ -37,20 +36,23 @@ public class DamageListener implements Listener {
        Critical: 4.5 (9) -> 3.5 (7) [-2]
 
      * Note: To fix damage is x - 2.
-
      */
 
+    // Adicione o método isBothPlayers() 
+    public boolean isBothPlayers(EntityDamageByEntityEvent event) {
+        // Implemente a lógica que verifica se ambos os jogadores estão envolvidos
+        return (event.getEntity() instanceof Player) && (event.getDamager() instanceof Player);
+    }
 
     @EventHandler(priority = EventPriority.LOW, ignoreCancelled = true)
     public void onEntityDamageByEntityEvent(EntityDamageByEntityEvent event) {
-        if (event.isBothPlayers()) {
+        if (isBothPlayers(event)) {
             Player player = (Player) event.getDamager();
             ItemStack itemStack = player.getItemInHand();
             if (itemStack != null && ACCEPTABLE_MATERIALS.contains(itemStack.getType()))
                 event.setDamage(Math.max(2, event.getDamage() - 1.5));
             else if (itemStack != null && itemStack.getType() == Material.MUSHROOM_SOUP)
                 event.setDamage(1);
-
         }
     }
 }

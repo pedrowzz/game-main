@@ -1,0 +1,35 @@
+com/minecraft/hungergames/user/celebrations/Celebration.java
+ com.minecraft.hungergames.user.celebrations.Celebration
+com/minecraft/hungergames/user/User.java
+ com.minecraft.hungergames.user.User
+com/minecraft/hungergames/HungerGames.java
+ com.minecraft.hungergames.HungerGames
+com/minecraft/hungergames/user/pattern/Condition.java
+ com.minecraft.hungergames.user.pattern.Condition
+com/minecraft/hungergames/util/game/GameStage.java
+ com.minecraft.hungergames.util.game.GameStage
+com/minecraft/hungergames/user/kits/pattern/DailyKit.java
+ com.minecraft.hungergames.user.kits.pattern.DailyKit
+com/minecraft/hungergames/game/team/Team.java
+ com.minecraft.hungergames.game.team.Team
+com/minecraft/hungergames/user/kits/pattern/KitCategory.java
+ com.minecraft.hungergames.user.kits.pattern.KitCategory
+com/minecraft/hungergames/user/object/ScrimSettings.java
+ com.minecraft.hungergames.user.object.ScrimSettings
+com/minecraft/hungergames/user/kits/Kit.java
+ com.minecraft.hungergames.user.kits.Kit
+com/minecraft/hungergames/user/object/AwaySession.java
+ com.minecraft.hungergames.user.object.AwaySession
+com/minecraft/hungergames/user/pattern/DieCause.java
+ com.minecraft.hungergames.user.pattern.DieCause
+com/minecraft/hungergames/user/kits/pattern/CooldownType.java
+ com.minecraft.hungergames.user.kits.pattern.CooldownType
+com/minecraft/hungergames/user/celebrations/pattern/CelebrationRarity.java
+ com.minecraft.hungergames.user.celebrations.pattern.CelebrationRarity
+com/minecraft/hungergames/user/object/CombatTag.java
+ com.minecraft.hungergames.user.object.CombatTag
+com/minecraft/hungergames/util/constructor/Assistance.java
+ com.minecraft.hungergames.util.constructor.Assistance
+ com.minecraft.hungergames.util.constructor.Assistance$1
+com/minecraft/hungergames/event/user/LivingUserDieEvent.java
+ com.minecraft.hungergames.event.user.LivingUserDieEvent

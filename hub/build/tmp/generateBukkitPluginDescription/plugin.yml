@@ -1,0 +1,5 @@
+name: Hub
+version: 1.0.0-885f2af
+main: com.minecraft.hub.Hub
+description: Lobby bukkit plugin based on core and core-bukkit.
+website: www.yolomc.com

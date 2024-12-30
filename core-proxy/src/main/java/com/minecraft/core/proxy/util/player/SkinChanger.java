@@ -10,6 +10,7 @@ import lombok.Getter;
 import net.md_5.bungee.api.connection.PendingConnection;
 import net.md_5.bungee.connection.InitialHandler;
 import net.md_5.bungee.connection.LoginResult;
+import net.md_5.bungee.protocol.Property;
 
 import java.lang.reflect.Field;
 
@@ -27,20 +28,26 @@ public class SkinChanger {
             loginProfile = initialHandler.getLoginProfile();
         }
 
-        LoginResult.Property property = new LoginResult.Property("textures", value, signature);
-        loginProfile.setProperties(new LoginResult.Property[]{property});
+        Property[] properties = new Property[1];
+        properties[0] = new Property("textures", value, signature);
+        loginProfile.setProperties(properties);
     }
 
-    public LoginResult.Property getSkin(PendingConnection pendingConnection) {
+    public Property getSkin(PendingConnection pendingConnection) {
         InitialHandler initialHandler = (InitialHandler) pendingConnection;
-        return initialHandler.getLoginProfile().getProperties()[0];
+        LoginResult loginProfile = initialHandler.getLoginProfile();
+        if (loginProfile != null && loginProfile.getProperties() != null && loginProfile.getProperties().length > 0) {
+            return loginProfile.getProperties()[0];
+        }
+        return null;
     }
 
     private void setLoginProfile(InitialHandler initialHandler, PendingConnection pendingConnection) {
         try {
             Field field = initialHandler.getClass().getDeclaredField("loginProfile");
             field.setAccessible(true);
-            field.set(initialHandler, new LoginResult(pendingConnection.getUUID(), pendingConnection.getName(), new LoginResult.Property[0]));
+            Property[] properties = new Property[0];
+            field.set(initialHandler, new LoginResult(pendingConnection.getUUID(), pendingConnection.getName(), properties));
         } catch (Exception e) {
             e.printStackTrace();
         }

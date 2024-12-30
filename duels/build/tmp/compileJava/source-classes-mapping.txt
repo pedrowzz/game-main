@@ -1,0 +1,57 @@
+com/minecraft/duels/room/team/Team.java
+ com.minecraft.duels.room.team.Team
+com/minecraft/duels/mode/list/Sumo.java
+ com.minecraft.duels.mode.list.Sumo
+com/minecraft/duels/listener/PlayerListener.java
+ com.minecraft.duels.listener.PlayerListener
+com/minecraft/duels/util/enums/Items.java
+ com.minecraft.duels.util.enums.Items
+ com.minecraft.duels.util.enums.Items$1
+com/minecraft/duels/mode/list/Gladiator.java
+ com.minecraft.duels.mode.list.Gladiator
+com/minecraft/duels/util/visibility/Visibility.java
+ com.minecraft.duels.util.visibility.Visibility
+com/minecraft/duels/room/generator/VoidGenerator.java
+ com.minecraft.duels.room.generator.VoidGenerator
+com/minecraft/duels/event/player/UserDeathEvent.java
+ com.minecraft.duels.event.player.UserDeathEvent
+com/minecraft/duels/Duels.java
+ com.minecraft.duels.Duels
+com/minecraft/duels/util/FireworkAPI.java
+ com.minecraft.duels.util.FireworkAPI
+com/minecraft/duels/mode/list/Scrim.java
+ com.minecraft.duels.mode.list.Scrim
+com/minecraft/duels/mode/list/Simulator.java
+ com.minecraft.duels.mode.list.Simulator
+com/minecraft/duels/user/loader/UserLoader.java
+ com.minecraft.duels.user.loader.UserLoader
+com/minecraft/duels/map/config/MapConfiguration.java
+ com.minecraft.duels.map.config.MapConfiguration
+com/minecraft/duels/listener/WorldListener.java
+ com.minecraft.duels.listener.WorldListener
+com/minecraft/duels/command/DemandCommand.java
+ com.minecraft.duels.command.DemandCommand
+com/minecraft/duels/mode/list/Boxing.java
+ com.minecraft.duels.mode.list.Boxing
+com/minecraft/duels/mode/list/Soup.java
+ com.minecraft.duels.mode.list.Soup
+com/minecraft/duels/util/enums/RoomStage.java
+ com.minecraft.duels.util.enums.RoomStage
+com/minecraft/duels/mode/list/GladiatorOld.java
+ com.minecraft.duels.mode.list.GladiatorOld
+com/minecraft/duels/room/Room.java
+ com.minecraft.duels.room.Room
+com/minecraft/duels/listener/DamageListener.java
+ com.minecraft.duels.listener.DamageListener
+com/minecraft/duels/listener/ServerListener.java
+ com.minecraft.duels.listener.ServerListener
+com/minecraft/duels/user/User.java
+ com.minecraft.duels.user.User
+com/minecraft/duels/user/UserStorage.java
+ com.minecraft.duels.user.UserStorage
+com/minecraft/duels/room/storage/RoomStorage.java
+ com.minecraft.duels.room.storage.RoomStorage
+com/minecraft/duels/mode/Mode.java
+ com.minecraft.duels.mode.Mode
+com/minecraft/duels/mode/list/UHC.java
+ com.minecraft.duels.mode.list.UHC

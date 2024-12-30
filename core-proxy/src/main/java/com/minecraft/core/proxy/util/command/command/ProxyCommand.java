@@ -80,7 +80,6 @@ public class ProxyCommand extends Command implements CommandHolder<CommandSender
         if (commandExecutor instanceof ProxyCommandExecutor) {
             ((ProxyCommandExecutor) commandExecutor).setCommand(this);
         }
-
     }
 
     public final void initCompleter(CompleterExecutor<CommandSender> completerExecutor) {
@@ -93,10 +92,12 @@ public class ProxyCommand extends Command implements CommandHolder<CommandSender
     }
 
     @Override
-    public void execute(CommandSender sender, String[] args, String label) {
+    public void execute(CommandSender sender, String[] args) {
+        executeCommand(sender, args, getName());
+    }
 
+    public void executeCommand(CommandSender sender, String[] args, String label) {
         if (sender instanceof ProxiedPlayer) {
-
             ProxyServer.getInstance().getLogger().log(Level.INFO, sender.getName() + " executed: /" + label.toLowerCase() + " " + String.join(" ", args));
 
             ProxiedPlayer player = (ProxiedPlayer) sender;
@@ -122,7 +123,8 @@ public class ProxyCommand extends Command implements CommandHolder<CommandSender
         if (args.length > 0) {
             ProxyChildCommand command = getChildCommand(args[0]);
             if (command != null) {
-                command.execute(sender, ArrayUtil.copyOfRange(args, 1, args.length), args[0]);
+                // Corrigido para passar apenas os argumentos necessários
+                command.execute(sender, ArrayUtil.copyOfRange(args, 1, args.length));
                 return;
             }
         }
@@ -132,11 +134,27 @@ public class ProxyCommand extends Command implements CommandHolder<CommandSender
         }
 
         if (commandInfo.isAsync() && frame.getExecutor() != null) {
-            frame.getExecutor().execute(() -> commandExecutor.execute(new ProxyContext((sender instanceof ProxiedPlayer ? ((ProxiedPlayer) sender).getUniqueId() : Constants.CONSOLE_UUID), sender, label, ProxyPlatformValidator.INSTANCE.fromSender(sender), args, frame, this)));
+            frame.getExecutor().execute(() -> commandExecutor.execute(new ProxyContext(
+                (sender instanceof ProxiedPlayer ? ((ProxiedPlayer) sender).getUniqueId() : Constants.CONSOLE_UUID),
+                sender,
+                label,
+                ProxyPlatformValidator.INSTANCE.fromSender(sender),
+                args,
+                frame,
+                this
+            )));
             return;
         }
 
-        commandExecutor.execute(new ProxyContext((sender instanceof ProxiedPlayer ? ((ProxiedPlayer) sender).getUniqueId() : Constants.CONSOLE_UUID), sender, label, ProxyPlatformValidator.INSTANCE.fromSender(sender), args, frame, this));
+        commandExecutor.execute(new ProxyContext(
+            (sender instanceof ProxiedPlayer ? ((ProxiedPlayer) sender).getUniqueId() : Constants.CONSOLE_UUID),
+            sender,
+            label,
+            ProxyPlatformValidator.INSTANCE.fromSender(sender),
+            args,
+            frame,
+            this
+        ));
     }
 
     @Override
@@ -155,11 +173,14 @@ public class ProxyCommand extends Command implements CommandHolder<CommandSender
         }
 
         if (completerExecutor != null) {
-            return completerExecutor.execute(new ProxyContext((sender instanceof ProxiedPlayer ? ((ProxiedPlayer) sender).getUniqueId() : Constants.CONSOLE_UUID), sender, "undefined",
-                    ProxyPlatformValidator.INSTANCE.fromSender(sender),
-                    args,
-                    frame,
-                    this
+            return completerExecutor.execute(new ProxyContext(
+                (sender instanceof ProxiedPlayer ? ((ProxiedPlayer) sender).getUniqueId() : Constants.CONSOLE_UUID),
+                sender,
+                "undefined",
+                ProxyPlatformValidator.INSTANCE.fromSender(sender),
+                args,
+                frame,
+                this
             ));
         }
 

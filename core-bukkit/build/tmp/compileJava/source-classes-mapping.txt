@@ -1,0 +1,494 @@
+com/minecraft/core/bukkit/command/EffectsCommand.java
+ com.minecraft.core.bukkit.command.EffectsCommand
+com/minecraft/core/bukkit/util/leaderboard/hologram/LeaderboardHologram.java
+ com.minecraft.core.bukkit.util.leaderboard.hologram.LeaderboardHologram
+com/minecraft/core/bukkit/event/player/PlayerVanishDisableEvent.java
+ com.minecraft.core.bukkit.event.player.PlayerVanishDisableEvent
+com/minecraft/core/bukkit/server/route/BridgeRouteContext.java
+ com.minecraft.core.bukkit.server.route.BridgeRouteContext
+com/minecraft/core/bukkit/arcade/game/GameQuantity.java
+ com.minecraft.core.bukkit.arcade.game.GameQuantity
+com/minecraft/core/bukkit/command/StatisticsCommand.java
+ com.minecraft.core.bukkit.command.StatisticsCommand
+ com.minecraft.core.bukkit.command.StatisticsCommand$Statistics
+ com.minecraft.core.bukkit.command.StatisticsCommand$Statistics$1
+ com.minecraft.core.bukkit.command.StatisticsCommand$Statistics$2
+com/minecraft/core/bukkit/util/particle/data/texture/ItemTexture.java
+ com.minecraft.core.bukkit.util.particle.data.texture.ItemTexture
+com/minecraft/core/bukkit/command/ReportsCommand.java
+ com.minecraft.core.bukkit.command.ReportsCommand
+com/minecraft/core/bukkit/util/leaderboard/libs/LeaderboardUpdate.java
+ com.minecraft.core.bukkit.util.leaderboard.libs.LeaderboardUpdate
+com/minecraft/core/bukkit/event/player/PlayerHideEvent.java
+ com.minecraft.core.bukkit.event.player.PlayerHideEvent
+com/minecraft/core/bukkit/util/selector/content/SlotIterator.java
+ com.minecraft.core.bukkit.util.selector.content.SlotIterator
+ com.minecraft.core.bukkit.util.selector.content.SlotIterator$1
+ com.minecraft.core.bukkit.util.selector.content.SlotIterator$Impl
+ com.minecraft.core.bukkit.util.selector.content.SlotIterator$Type
+com/minecraft/core/bukkit/util/bossbar/BossbarProvider.java
+ com.minecraft.core.bukkit.util.bossbar.BossbarProvider
+ com.minecraft.core.bukkit.util.bossbar.BossbarProvider$1
+com/minecraft/core/bukkit/util/leaderboard/LeaderboardHandler.java
+ com.minecraft.core.bukkit.util.leaderboard.LeaderboardHandler
+com/minecraft/core/bukkit/anticheat/modules/list/AutoClick.java
+ com.minecraft.core.bukkit.anticheat.modules.list.AutoClick
+ com.minecraft.core.bukkit.anticheat.modules.list.AutoClick$PlayerClickHistory
+com/minecraft/core/bukkit/event/player/PlayerUpdateTablistEvent.java
+ com.minecraft.core.bukkit.event.player.PlayerUpdateTablistEvent
+com/minecraft/core/bukkit/util/selector/SmartInventory.java
+ com.minecraft.core.bukkit.util.selector.SmartInventory
+ com.minecraft.core.bukkit.util.selector.SmartInventory$Builder
+com/minecraft/core/bukkit/util/command/command/BukkitChildCommand.java
+ com.minecraft.core.bukkit.util.command.command.BukkitChildCommand
+com/minecraft/core/bukkit/util/selector/opener/ChestInventoryOpener.java
+ com.minecraft.core.bukkit.util.selector.opener.ChestInventoryOpener
+com/minecraft/core/bukkit/command/ExportInventoryCommand.java
+ com.minecraft.core.bukkit.command.ExportInventoryCommand
+com/minecraft/core/bukkit/listener/SoupListener.java
+ com.minecraft.core.bukkit.listener.SoupListener
+com/minecraft/core/bukkit/util/BukkitSerialization.java
+ com.minecraft.core.bukkit.util.BukkitSerialization
+com/minecraft/core/bukkit/command/PckgstatCommand.java
+ com.minecraft.core.bukkit.command.PckgstatCommand
+com/minecraft/core/bukkit/command/WhitelistCommand.java
+ com.minecraft.core.bukkit.command.WhitelistCommand
+ com.minecraft.core.bukkit.command.WhitelistCommand$Argument
+ com.minecraft.core.bukkit.command.WhitelistCommand$Argument$Executor
+com/minecraft/core/bukkit/server/route/GameRouteContext.java
+ com.minecraft.core.bukkit.server.route.GameRouteContext
+com/minecraft/core/bukkit/arcade/game/GameType.java
+ com.minecraft.core.bukkit.arcade.game.GameType
+com/minecraft/core/bukkit/util/leaderboard/libs/LeaderboardData.java
+ com.minecraft.core.bukkit.util.leaderboard.libs.LeaderboardData
+com/minecraft/core/bukkit/command/ClanTagCommand.java
+ com.minecraft.core.bukkit.command.ClanTagCommand
+com/minecraft/core/bukkit/server/skywars/GameMode.java
+ com.minecraft.core.bukkit.server.skywars.GameMode
+com/minecraft/core/bukkit/scheduler/BukkitServerTicker.java
+ com.minecraft.core.bukkit.scheduler.BukkitServerTicker
+com/minecraft/core/bukkit/util/selector/opener/SpecialInventoryOpener.java
+ com.minecraft.core.bukkit.util.selector.opener.SpecialInventoryOpener
+com/minecraft/core/bukkit/listener/AccountLoader.java
+ com.minecraft.core.bukkit.listener.AccountLoader
+ com.minecraft.core.bukkit.listener.AccountLoader$1
+com/minecraft/core/bukkit/command/AlertCommand.java
+ com.minecraft.core.bukkit.command.AlertCommand
+com/minecraft/core/bukkit/util/npc/NPC.java
+ com.minecraft.core.bukkit.util.npc.NPC
+ com.minecraft.core.bukkit.util.npc.NPC$Equipment
+ com.minecraft.core.bukkit.util.npc.NPC$Equipment$EquipmentBuilder
+ com.minecraft.core.bukkit.util.npc.NPC$Interact
+ com.minecraft.core.bukkit.util.npc.NPC$Interact$ClickType
+ com.minecraft.core.bukkit.util.npc.NPC$NPCBuilder
+com/minecraft/core/bukkit/command/PacketFilterCommand.java
+ com.minecraft.core.bukkit.command.PacketFilterCommand
+com/minecraft/core/bukkit/event/cooldown/CooldownStopEvent.java
+ com.minecraft.core.bukkit.event.cooldown.CooldownStopEvent
+com/minecraft/core/bukkit/util/selector/content/InventoryContents.java
+ com.minecraft.core.bukkit.util.selector.content.InventoryContents
+ com.minecraft.core.bukkit.util.selector.content.InventoryContents$Impl
+com/minecraft/core/bukkit/event/server/ServerPayloadSendEvent.java
+ com.minecraft.core.bukkit.event.server.ServerPayloadSendEvent
+com/minecraft/core/bukkit/util/particle/utils/ReflectionUtils.java
+ com.minecraft.core.bukkit.util.particle.utils.ReflectionUtils
+com/minecraft/core/bukkit/util/variable/object/VariableValidation.java
+ com.minecraft.core.bukkit.util.variable.object.VariableValidation
+com/minecraft/core/bukkit/util/bedwars/FloatingItem.java
+ com.minecraft.core.bukkit.util.bedwars.FloatingItem
+ com.minecraft.core.bukkit.util.bedwars.FloatingItem$1
+com/minecraft/core/bukkit/util/BukkitInterface.java
+ com.minecraft.core.bukkit.util.BukkitInterface
+com/minecraft/core/bukkit/util/bossbar/util/Reflections.java
+ com.minecraft.core.bukkit.util.bossbar.util.Reflections
+ com.minecraft.core.bukkit.util.bossbar.util.Reflections$1
+ com.minecraft.core.bukkit.util.bossbar.util.Reflections$FieldAccessor
+com/minecraft/core/bukkit/event/player/PlayerTeamAssignEvent.java
+ com.minecraft.core.bukkit.event.player.PlayerTeamAssignEvent
+com/minecraft/core/bukkit/listener/AntiDamageIndicator.java
+ com.minecraft.core.bukkit.listener.AntiDamageIndicator
+com/minecraft/core/bukkit/command/ParticleCommand.java
+ com.minecraft.core.bukkit.command.ParticleCommand
+com/minecraft/core/bukkit/util/selector/content/Pagination.java
+ com.minecraft.core.bukkit.util.selector.content.Pagination
+ com.minecraft.core.bukkit.util.selector.content.Pagination$Impl
+com/minecraft/core/bukkit/command/MedalCommand.java
+ com.minecraft.core.bukkit.command.MedalCommand
+com/minecraft/core/bukkit/command/StafflogCommand.java
+ com.minecraft.core.bukkit.command.StafflogCommand
+com/minecraft/core/bukkit/util/leaderboard/libs/EmptyLeaderboard.java
+ com.minecraft.core.bukkit.util.leaderboard.libs.EmptyLeaderboard
+com/minecraft/core/bukkit/command/PrefixtypeCommand.java
+ com.minecraft.core.bukkit.command.PrefixtypeCommand
+com/minecraft/core/bukkit/arcade/map/rollback/RollbackBlock.java
+ com.minecraft.core.bukkit.arcade.map.rollback.RollbackBlock
+ com.minecraft.core.bukkit.arcade.map.rollback.RollbackBlock$RollbackType
+com/minecraft/core/bukkit/util/particle/utils/MathUtils.java
+ com.minecraft.core.bukkit.util.particle.utils.MathUtils
+com/minecraft/core/bukkit/util/bossbar/interfaces/BossbarHandler.java
+ com.minecraft.core.bukkit.util.bossbar.interfaces.BossbarHandler
+com/minecraft/core/bukkit/event/handler/ServerEvent.java
+ com.minecraft.core.bukkit.event.handler.ServerEvent
+com/minecraft/core/bukkit/server/BukkitServerInformationThread.java
+ com.minecraft.core.bukkit.server.BukkitServerInformationThread
+com/minecraft/core/bukkit/arcade/game/GameStyle.java
+ com.minecraft.core.bukkit.arcade.game.GameStyle
+com/minecraft/core/bukkit/server/thebridge/GameType.java
+ com.minecraft.core.bukkit.server.thebridge.GameType
+com/minecraft/core/bukkit/util/scoreboard/GameScoreboard.java
+ com.minecraft.core.bukkit.util.scoreboard.GameScoreboard
+ com.minecraft.core.bukkit.util.scoreboard.GameScoreboard$ObjectiveMode
+ com.minecraft.core.bukkit.util.scoreboard.GameScoreboard$ScoreboardAction
+ com.minecraft.core.bukkit.util.scoreboard.GameScoreboard$TeamMode
+ com.minecraft.core.bukkit.util.scoreboard.GameScoreboard$VersionType
+com/minecraft/core/bukkit/command/GetlocationCommand.java
+ com.minecraft.core.bukkit.command.GetlocationCommand
+com/minecraft/core/bukkit/util/particle/ParticleBuilder.java
+ com.minecraft.core.bukkit.util.particle.ParticleBuilder
+com/minecraft/core/bukkit/util/bossbar/BossbarWither.java
+ com.minecraft.core.bukkit.util.bossbar.BossbarWither
+com/minecraft/core/bukkit/util/worldedit/Pattern.java
+ com.minecraft.core.bukkit.util.worldedit.Pattern
+com/minecraft/core/bukkit/listener/AwayListener.java
+ com.minecraft.core.bukkit.listener.AwayListener
+com/minecraft/core/bukkit/command/ForceskinCommand.java
+ com.minecraft.core.bukkit.command.ForceskinCommand
+com/minecraft/core/bukkit/util/variable/converter/VariableConverter.java
+ com.minecraft.core.bukkit.util.variable.converter.VariableConverter
+com/minecraft/core/bukkit/util/scoreboard/AnimatedString.java
+ com.minecraft.core.bukkit.util.scoreboard.AnimatedString
+com/minecraft/core/bukkit/arcade/map/synthetic/SyntheticLocation.java
+ com.minecraft.core.bukkit.arcade.map.synthetic.SyntheticLocation
+com/minecraft/core/bukkit/server/skywars/GameType.java
+ com.minecraft.core.bukkit.server.skywars.GameType
+com/minecraft/core/bukkit/command/LoopCommand.java
+ com.minecraft.core.bukkit.command.LoopCommand
+ com.minecraft.core.bukkit.command.LoopCommand$1
+com/minecraft/core/bukkit/command/SkinCommand.java
+ com.minecraft.core.bukkit.command.SkinCommand
+ com.minecraft.core.bukkit.command.SkinCommand$1
+ com.minecraft.core.bukkit.command.SkinCommand$2
+ com.minecraft.core.bukkit.command.SkinCommand$3
+ com.minecraft.core.bukkit.command.SkinCommand$4
+ com.minecraft.core.bukkit.command.SkinCommand$5
+ com.minecraft.core.bukkit.command.SkinCommand$6
+ com.minecraft.core.bukkit.command.SkinCommand$7
+ com.minecraft.core.bukkit.command.SkinCommand$8
+ com.minecraft.core.bukkit.command.SkinCommand$9
+com/minecraft/core/bukkit/util/inventory/ReportsInventory.java
+ com.minecraft.core.bukkit.util.inventory.ReportsInventory
+com/minecraft/core/bukkit/util/inventory/PreferencesInventory.java
+ com.minecraft.core.bukkit.util.inventory.PreferencesInventory
+ com.minecraft.core.bukkit.util.inventory.PreferencesInventory$1
+ com.minecraft.core.bukkit.util.inventory.PreferencesInventory$BukkitPreferences
+com/minecraft/core/bukkit/command/VariableCommand.java
+ com.minecraft.core.bukkit.command.VariableCommand
+com/minecraft/core/bukkit/anticheat/modules/Module.java
+ com.minecraft.core.bukkit.anticheat.modules.Module
+com/minecraft/core/bukkit/util/hologram/helper/CustomBoundingBox.java
+ com.minecraft.core.bukkit.util.hologram.helper.CustomBoundingBox
+com/minecraft/core/bukkit/arcade/map/Map.java
+ com.minecraft.core.bukkit.arcade.map.Map
+com/minecraft/core/bukkit/util/selector/content/SlotPos.java
+ com.minecraft.core.bukkit.util.selector.content.SlotPos
+com/minecraft/core/bukkit/util/particle/PropertyType.java
+ com.minecraft.core.bukkit.util.particle.PropertyType
+com/minecraft/core/bukkit/util/cooldown/type/Cooldown.java
+ com.minecraft.core.bukkit.util.cooldown.type.Cooldown
+com/minecraft/core/bukkit/util/file/FileUtil.java
+ com.minecraft.core.bukkit.util.file.FileUtil
+com/minecraft/core/bukkit/arcade/route/GameRouteContext.java
+ com.minecraft.core.bukkit.arcade.route.GameRouteContext
+ com.minecraft.core.bukkit.arcade.route.GameRouteContext$GameRouteContextBuilder
+com/minecraft/core/bukkit/anticheat/player/Suspect.java
+ com.minecraft.core.bukkit.anticheat.player.Suspect
+com/minecraft/core/bukkit/util/bossbar/util/NMS.java
+ com.minecraft.core.bukkit.util.bossbar.util.NMS
+com/minecraft/core/bukkit/event/player/PlayerSoupDrinkEvent.java
+ com.minecraft.core.bukkit.event.player.PlayerSoupDrinkEvent
+com/minecraft/core/bukkit/event/handler/AccountEvent.java
+ com.minecraft.core.bukkit.event.handler.AccountEvent
+com/minecraft/core/bukkit/util/bossbar/CraftWitherBossbar.java
+ com.minecraft.core.bukkit.util.bossbar.CraftWitherBossbar
+com/minecraft/core/bukkit/util/whitelist/WhitelistLog.java
+ com.minecraft.core.bukkit.util.whitelist.WhitelistLog
+ com.minecraft.core.bukkit.util.whitelist.WhitelistLog$Action
+com/minecraft/core/bukkit/command/CensorCheckCommand.java
+ com.minecraft.core.bukkit.command.CensorCheckCommand
+com/minecraft/core/bukkit/scheduler/GameRunnable.java
+ com.minecraft.core.bukkit.scheduler.GameRunnable
+com/minecraft/core/bukkit/util/particle/data/color/ParticleColor.java
+ com.minecraft.core.bukkit.util.particle.data.color.ParticleColor
+com/minecraft/core/bukkit/listener/ServerListener.java
+ com.minecraft.core.bukkit.listener.ServerListener
+com/minecraft/core/bukkit/event/server/RedisPubSubEvent.java
+ com.minecraft.core.bukkit.event.server.RedisPubSubEvent
+com/minecraft/core/bukkit/util/leaderboard/libs/LeaderboardType.java
+ com.minecraft.core.bukkit.util.leaderboard.libs.LeaderboardType
+com/minecraft/core/bukkit/util/whitelist/WhitelistData.java
+ com.minecraft.core.bukkit.util.whitelist.WhitelistData
+com/minecraft/core/bukkit/event/player/PlayerCommandTabCompleteEvent.java
+ com.minecraft.core.bukkit.event.player.PlayerCommandTabCompleteEvent
+com/minecraft/core/bukkit/util/particle/data/texture/ParticleTexture.java
+ com.minecraft.core.bukkit.util.particle.data.texture.ParticleTexture
+com/minecraft/core/bukkit/event/handler/CooldownEvent.java
+ com.minecraft.core.bukkit.event.handler.CooldownEvent
+com/minecraft/core/bukkit/util/disguise/PlayerDisguise.java
+ com.minecraft.core.bukkit.util.disguise.PlayerDisguise
+com/minecraft/core/bukkit/command/LobbyCommand.java
+ com.minecraft.core.bukkit.command.LobbyCommand
+com/minecraft/core/bukkit/arcade/map/SignedLocation.java
+ com.minecraft.core.bukkit.arcade.map.SignedLocation
+com/minecraft/core/bukkit/arcade/team/Team.java
+ com.minecraft.core.bukkit.arcade.team.Team
+com/minecraft/core/bukkit/util/worldedit/WorldEditAPI.java
+ com.minecraft.core.bukkit.util.worldedit.WorldEditAPI
+com/minecraft/core/bukkit/BukkitGame.java
+ com.minecraft.core.bukkit.BukkitGame
+com/minecraft/core/bukkit/util/particle/data/color/RegularColor.java
+ com.minecraft.core.bukkit.util.particle.data.color.RegularColor
+com/minecraft/core/bukkit/event/server/ServerPayloadReceiveEvent.java
+ com.minecraft.core.bukkit.event.server.ServerPayloadReceiveEvent
+com/minecraft/core/bukkit/util/variable/object/ExecutableVariable.java
+ com.minecraft.core.bukkit.util.variable.object.ExecutableVariable
+com/minecraft/core/bukkit/command/WhisperCommand.java
+ com.minecraft.core.bukkit.command.WhisperCommand
+com/minecraft/core/bukkit/util/hologram/HologramProvider.java
+ com.minecraft.core.bukkit.util.hologram.HologramProvider
+com/minecraft/core/bukkit/util/WordCensor.java
+ com.minecraft.core.bukkit.util.WordCensor
+com/minecraft/core/bukkit/command/CrashCommand.java
+ com.minecraft.core.bukkit.command.CrashCommand
+com/minecraft/core/bukkit/util/whitelist/Whitelist.java
+ com.minecraft.core.bukkit.util.whitelist.Whitelist
+com/minecraft/core/bukkit/util/listener/DynamicListener.java
+ com.minecraft.core.bukkit.util.listener.DynamicListener
+com/minecraft/core/bukkit/arcade/route/JoinMode.java
+ com.minecraft.core.bukkit.arcade.route.JoinMode
+com/minecraft/core/bukkit/util/variable/object/Variable.java
+ com.minecraft.core.bukkit.util.variable.object.Variable
+com/minecraft/core/bukkit/event/server/ServerHeartbeatEvent.java
+ com.minecraft.core.bukkit.event.server.ServerHeartbeatEvent
+com/minecraft/core/bukkit/util/item/ItemFactory.java
+ com.minecraft.core.bukkit.util.item.ItemFactory
+com/minecraft/core/bukkit/command/PerfilCommand.java
+ com.minecraft.core.bukkit.command.PerfilCommand
+com/minecraft/core/bukkit/event/player/PlayerUpdateLanguageEvent.java
+ com.minecraft.core.bukkit.event.player.PlayerUpdateLanguageEvent
+com/minecraft/core/bukkit/command/WorldEditCommand.java
+ com.minecraft.core.bukkit.command.WorldEditCommand
+com/minecraft/core/bukkit/command/FollowCommand.java
+ com.minecraft.core.bukkit.command.FollowCommand
+ com.minecraft.core.bukkit.command.FollowCommand$1
+com/minecraft/core/bukkit/command/TpsCommand.java
+ com.minecraft.core.bukkit.command.TpsCommand
+com/minecraft/core/bukkit/util/selector/content/InventoryProvider.java
+ com.minecraft.core.bukkit.util.selector.content.InventoryProvider
+com/minecraft/core/bukkit/util/map/DuplicateMap.java
+ com.minecraft.core.bukkit.util.map.DuplicateMap
+com/minecraft/core/bukkit/server/thebridge/BridgeCageConfig.java
+ com.minecraft.core.bukkit.server.thebridge.BridgeCageConfig
+com/minecraft/core/bukkit/event/protocol/PacketReceiveEvent.java
+ com.minecraft.core.bukkit.event.protocol.PacketReceiveEvent
+com/minecraft/core/bukkit/util/violation/ViolationFeedback.java
+ com.minecraft.core.bukkit.util.violation.ViolationFeedback
+com/minecraft/core/bukkit/util/command/executor/BukkitCompleterExecutor.java
+ com.minecraft.core.bukkit.util.command.executor.BukkitCompleterExecutor
+com/minecraft/core/bukkit/util/npc/NPCListener.java
+ com.minecraft.core.bukkit.util.npc.NPCListener
+com/minecraft/core/bukkit/command/ArcadeDevCommand.java
+ com.minecraft.core.bukkit.command.ArcadeDevCommand
+com/minecraft/core/bukkit/util/language/BukkitTranslationExecutor.java
+ com.minecraft.core.bukkit.util.language.BukkitTranslationExecutor
+com/minecraft/core/bukkit/command/TeleportallCommand.java
+ com.minecraft.core.bukkit.command.TeleportallCommand
+ com.minecraft.core.bukkit.command.TeleportallCommand$1
+com/minecraft/core/bukkit/event/player/PlayerShowEvent.java
+ com.minecraft.core.bukkit.event.player.PlayerShowEvent
+com/minecraft/core/bukkit/util/cooldown/CooldownProvider.java
+ com.minecraft.core.bukkit.util.cooldown.CooldownProvider
+ com.minecraft.core.bukkit.util.cooldown.CooldownProvider$CooldownListener
+com/minecraft/core/bukkit/server/thebridge/BridgeCageList.java
+ com.minecraft.core.bukkit.server.thebridge.BridgeCageList
+com/minecraft/core/bukkit/util/command/executor/BukkitAsynchronouslyExecutor.java
+ com.minecraft.core.bukkit.util.command.executor.BukkitAsynchronouslyExecutor
+com/minecraft/core/bukkit/util/particle/ParticleConstants.java
+ com.minecraft.core.bukkit.util.particle.ParticleConstants
+com/minecraft/core/bukkit/util/particle/ParticlePacket.java
+ com.minecraft.core.bukkit.util.particle.ParticlePacket
+com/minecraft/core/bukkit/util/leaderboard/Leaderboard.java
+ com.minecraft.core.bukkit.util.leaderboard.Leaderboard
+com/minecraft/core/bukkit/util/variable/object/SimpleVariable.java
+ com.minecraft.core.bukkit.util.variable.object.SimpleVariable
+com/minecraft/core/bukkit/event/player/PlayerVanishEnableEvent.java
+ com.minecraft.core.bukkit.event.player.PlayerVanishEnableEvent
+com/minecraft/core/bukkit/util/bossbar/interfaces/BossbarInterface.java
+ com.minecraft.core.bukkit.util.bossbar.interfaces.BossbarInterface
+com/minecraft/core/bukkit/arcade/room/RoomStage.java
+ com.minecraft.core.bukkit.arcade.room.RoomStage
+com/minecraft/core/bukkit/util/selector/opener/InventoryOpener.java
+ com.minecraft.core.bukkit.util.selector.opener.InventoryOpener
+com/minecraft/core/bukkit/util/variable/object/parameter/NoParameters.java
+ com.minecraft.core.bukkit.util.variable.object.parameter.NoParameters
+com/minecraft/core/bukkit/command/InventoryCommand.java
+ com.minecraft.core.bukkit.command.InventoryCommand
+com/minecraft/core/bukkit/event/cooldown/CooldownStartEvent.java
+ com.minecraft.core.bukkit.event.cooldown.CooldownStartEvent
+com/minecraft/core/bukkit/util/enums/Effects.java
+ com.minecraft.core.bukkit.util.enums.Effects
+com/minecraft/core/bukkit/util/hologram/Hologram.java
+ com.minecraft.core.bukkit.util.hologram.Hologram
+ com.minecraft.core.bukkit.util.hologram.Hologram$Interact
+ com.minecraft.core.bukkit.util.hologram.Hologram$Interact$ClickType
+com/minecraft/core/bukkit/event/player/PlayerMassiveTeleportExecuteEvent.java
+ com.minecraft.core.bukkit.event.player.PlayerMassiveTeleportExecuteEvent
+com/minecraft/core/bukkit/command/TagCommand.java
+ com.minecraft.core.bukkit.command.TagCommand
+com/minecraft/core/bukkit/server/skywars/GameStage.java
+ com.minecraft.core.bukkit.server.skywars.GameStage
+com/minecraft/core/bukkit/util/item/InteractableItem.java
+ com.minecraft.core.bukkit.util.item.InteractableItem
+ com.minecraft.core.bukkit.util.item.InteractableItem$Interact
+ com.minecraft.core.bukkit.util.item.InteractableItem$InteractAction
+ com.minecraft.core.bukkit.util.item.InteractableItem$InteractType
+com/minecraft/core/bukkit/event/protocol/PacketSendEvent.java
+ com.minecraft.core.bukkit.event.protocol.PacketSendEvent
+com/minecraft/core/bukkit/command/PreferencesCommand.java
+ com.minecraft.core.bukkit.command.PreferencesCommand
+com/minecraft/core/bukkit/util/violation/AntiCrash.java
+ com.minecraft.core.bukkit.util.violation.AntiCrash
+com/minecraft/core/bukkit/util/violation/MojangCrashTranslations.java
+ com.minecraft.core.bukkit.util.violation.MojangCrashTranslations
+com/minecraft/core/bukkit/command/LanguageCommand.java
+ com.minecraft.core.bukkit.command.LanguageCommand
+ com.minecraft.core.bukkit.command.LanguageCommand$LangMenu
+ com.minecraft.core.bukkit.command.LanguageCommand$LangMenu$1
+ com.minecraft.core.bukkit.command.LanguageCommand$LangMenu$2
+ com.minecraft.core.bukkit.command.LanguageCommand$LangMenu$3
+com/minecraft/core/bukkit/server/thebridge/CageRarity.java
+ com.minecraft.core.bukkit.server.thebridge.CageRarity
+com/minecraft/core/bukkit/command/TeleportCommand.java
+ com.minecraft.core.bukkit.command.TeleportCommand
+com/minecraft/core/bukkit/util/hologram/HologramListener.java
+ com.minecraft.core.bukkit.util.hologram.HologramListener
+com/minecraft/core/bukkit/util/selector/InventoryService.java
+ com.minecraft.core.bukkit.util.selector.InventoryService
+ com.minecraft.core.bukkit.util.selector.InventoryService$InvListener
+ com.minecraft.core.bukkit.util.selector.InventoryService$InvTask
+com/minecraft/core/bukkit/util/command/executor/BukkitCommandExecutor.java
+ com.minecraft.core.bukkit.util.command.executor.BukkitCommandExecutor
+com/minecraft/core/bukkit/util/bossbar/Bossbar.java
+ com.minecraft.core.bukkit.util.bossbar.Bossbar
+com/minecraft/core/bukkit/util/selector/ClickableItem.java
+ com.minecraft.core.bukkit.util.selector.ClickableItem
+com/minecraft/core/bukkit/command/GetlogsCommand.java
+ com.minecraft.core.bukkit.command.GetlogsCommand
+com/minecraft/core/bukkit/command/SmiteCommand.java
+ com.minecraft.core.bukkit.command.SmiteCommand
+com/minecraft/core/bukkit/arcade/room/Room.java
+ com.minecraft.core.bukkit.arcade.room.Room
+com/minecraft/core/bukkit/server/route/PlayMode.java
+ com.minecraft.core.bukkit.server.route.PlayMode
+com/minecraft/core/bukkit/command/ChatCommand.java
+ com.minecraft.core.bukkit.command.ChatCommand
+com/minecraft/core/bukkit/listener/EnchantmentListener.java
+ com.minecraft.core.bukkit.listener.EnchantmentListener
+com/minecraft/core/bukkit/server/hologram/InfoHologram.java
+ com.minecraft.core.bukkit.server.hologram.InfoHologram
+ com.minecraft.core.bukkit.server.hologram.InfoHologram$Updater
+com/minecraft/core/bukkit/util/reflection/FieldHelper.java
+ com.minecraft.core.bukkit.util.reflection.FieldHelper
+com/minecraft/core/bukkit/command/SpeedCommand.java
+ com.minecraft.core.bukkit.command.SpeedCommand
+ com.minecraft.core.bukkit.command.SpeedCommand$SpeedType
+ com.minecraft.core.bukkit.command.SpeedCommand$SpeedType$Applier
+com/minecraft/core/bukkit/arcade/map/area/Cuboid.java
+ com.minecraft.core.bukkit.arcade.map.area.Cuboid
+com/minecraft/core/bukkit/util/command/command/BukkitContext.java
+ com.minecraft.core.bukkit.util.command.command.BukkitContext
+com/minecraft/core/bukkit/util/particle/data/ParticleData.java
+ com.minecraft.core.bukkit.util.particle.data.ParticleData
+com/minecraft/core/bukkit/util/particle/ParticleEffect.java
+ com.minecraft.core.bukkit.util.particle.ParticleEffect
+com/minecraft/core/bukkit/command/MydragonCommand.java
+ com.minecraft.core.bukkit.command.MydragonCommand
+ com.minecraft.core.bukkit.command.MydragonCommand$1
+com/minecraft/core/bukkit/util/compression/WinRAR.java
+ com.minecraft.core.bukkit.util.compression.WinRAR
+ com.minecraft.core.bukkit.util.compression.WinRAR$1
+com/minecraft/core/bukkit/util/item/InteractableItemListener.java
+ com.minecraft.core.bukkit.util.item.InteractableItemListener
+com/minecraft/core/bukkit/util/variable/loader/VariableLoader.java
+ com.minecraft.core.bukkit.util.variable.loader.VariableLoader
+com/minecraft/core/bukkit/util/protocol/PacketListener.java
+ com.minecraft.core.bukkit.util.protocol.PacketListener
+com/minecraft/core/bukkit/command/InfoCommand.java
+ com.minecraft.core.bukkit.command.InfoCommand
+com/minecraft/core/bukkit/arcade/ArcadeGame.java
+ com.minecraft.core.bukkit.arcade.ArcadeGame
+com/minecraft/core/bukkit/command/VanishCommand.java
+ com.minecraft.core.bukkit.command.VanishCommand
+com/minecraft/core/bukkit/redis/BukkitRedisPubSub.java
+ com.minecraft.core.bukkit.redis.BukkitRedisPubSub
+com/minecraft/core/bukkit/util/variable/VariableStorage.java
+ com.minecraft.core.bukkit.util.variable.VariableStorage
+com/minecraft/core/bukkit/server/BukkitServerStorage.java
+ com.minecraft.core.bukkit.server.BukkitServerStorage
+com/minecraft/core/bukkit/util/hologram/HologramLine.java
+ com.minecraft.core.bukkit.util.hologram.HologramLine
+com/minecraft/core/bukkit/command/ProfileCommand.java
+ com.minecraft.core.bukkit.command.ProfileCommand
+ com.minecraft.core.bukkit.command.ProfileCommand$ProfileMenu
+ com.minecraft.core.bukkit.command.ProfileCommand$ProfileMenu$1
+ com.minecraft.core.bukkit.command.ProfileCommand$ProfileMenu$2
+ com.minecraft.core.bukkit.command.ProfileCommand$ProfileMenu$3
+com/minecraft/core/bukkit/util/command/platform/BukkitPlatformValidator.java
+ com.minecraft.core.bukkit.util.command.platform.BukkitPlatformValidator
+com/minecraft/core/bukkit/anticheat/AntiCheat.java
+ com.minecraft.core.bukkit.anticheat.AntiCheat
+com/minecraft/core/bukkit/util/selector/InventoryListener.java
+ com.minecraft.core.bukkit.util.selector.InventoryListener
+com/minecraft/core/bukkit/server/duels/DuelType.java
+ com.minecraft.core.bukkit.server.duels.DuelType
+com/minecraft/core/bukkit/util/command/command/BukkitCommand.java
+ com.minecraft.core.bukkit.util.command.command.BukkitCommand
+com/minecraft/core/bukkit/util/worldedit/WorldEditProvider.java
+ com.minecraft.core.bukkit.util.worldedit.WorldEditProvider
+ com.minecraft.core.bukkit.util.worldedit.WorldEditProvider$1
+ com.minecraft.core.bukkit.util.worldedit.WorldEditProvider$Position
+com/minecraft/core/bukkit/util/reflection/ClassHandler.java
+ com.minecraft.core.bukkit.util.reflection.ClassHandler
+com/minecraft/core/bukkit/command/NickCommand.java
+ com.minecraft.core.bukkit.command.NickCommand
+ com.minecraft.core.bukkit.command.NickCommand$Argument
+ com.minecraft.core.bukkit.command.NickCommand$Executor
+com/minecraft/core/bukkit/util/inventory/Selector.java
+ com.minecraft.core.bukkit.util.inventory.Selector
+ com.minecraft.core.bukkit.util.inventory.Selector$Builder
+ com.minecraft.core.bukkit.util.inventory.Selector$Holder
+ com.minecraft.core.bukkit.util.inventory.Selector$Updater
+com/minecraft/core/bukkit/util/command/BukkitFrame.java
+ com.minecraft.core.bukkit.util.command.BukkitFrame
+com/minecraft/core/bukkit/util/particle/data/color/NoteColor.java
+ com.minecraft.core.bukkit.util.particle.data.color.NoteColor
+com/minecraft/core/bukkit/util/protocol/PacketInjector.java
+ com.minecraft.core.bukkit.util.protocol.PacketInjector
+com/minecraft/core/bukkit/command/SudoCommand.java
+ com.minecraft.core.bukkit.command.SudoCommand
+com/minecraft/core/bukkit/util/vanish/Vanish.java
+ com.minecraft.core.bukkit.util.vanish.Vanish
+com/minecraft/core/bukkit/util/npc/NPCProvider.java
+ com.minecraft.core.bukkit.util.npc.NPCProvider
+com/minecraft/core/bukkit/event/cooldown/CooldownFinishEvent.java
+ com.minecraft.core.bukkit.event.cooldown.CooldownFinishEvent
+com/minecraft/core/bukkit/util/scoreboard/GameScoreboardReflection.java
+ com.minecraft.core.bukkit.util.scoreboard.GameScoreboardReflection
+com/minecraft/core/bukkit/util/reflection/Info.java
+ com.minecraft.core.bukkit.util.reflection.Info
+com/minecraft/core/bukkit/command/GamemodeCommand.java
+ com.minecraft.core.bukkit.command.GamemodeCommand
+com/minecraft/core/bukkit/util/particle/data/texture/BlockTexture.java
+ com.minecraft.core.bukkit.util.particle.data.texture.BlockTexture
+com/minecraft/core/bukkit/util/reflection/ReflectionUtils.java
+ com.minecraft.core.bukkit.util.reflection.ReflectionUtils
+ com.minecraft.core.bukkit.util.reflection.ReflectionUtils$1

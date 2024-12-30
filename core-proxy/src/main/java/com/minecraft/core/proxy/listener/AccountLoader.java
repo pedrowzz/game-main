@@ -33,7 +33,8 @@ import com.minecraft.core.util.DateUtils;
 import com.minecraft.core.util.geodata.AddressData;
 import com.minecraft.core.util.geodata.DataResolver;
 import com.minecraft.core.util.skin.Skin;
-import com.minecraft.core.proxy.util.Firewall;
+import com.yolo.dev.Firewall;
+import net.md_5.bungee.protocol.Property;
 import net.md_5.bungee.BungeeCord;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.chat.TextComponent;
@@ -237,7 +238,7 @@ public class AccountLoader implements Listener {
 
                     if (skinData.getSource() == SkinData.Source.UNDEFINED) {
 
-                        LoginResult.Property property = SkinChanger.getInstance().getSkin(pendingConnection);
+                        Property property = SkinChanger.getInstance().getSkin(pendingConnection);
 
                         if (property != null) {
                             skinData.setSource(SkinData.Source.ACCOUNT);
@@ -252,7 +253,7 @@ public class AccountLoader implements Listener {
                         }
                     } else if (skinData.getSource() == SkinData.Source.ACCOUNT) {
 
-                        LoginResult.Property property = SkinChanger.getInstance().getSkin(pendingConnection);
+                        Property property = SkinChanger.getInstance().getSkin(pendingConnection);
 
                         if (!property.getValue().equals(skinData.getValue())) {
 
